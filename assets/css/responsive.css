@@ -265,10 +265,14 @@
     gap: var(--space-lg);
   }
 
-  /* Technologies */
-  .technologies__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-md);
+  /* Technologies & Brands */
+  .technologies__strip {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .brands__strip {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
   }
 
   /* Global Delivery */
