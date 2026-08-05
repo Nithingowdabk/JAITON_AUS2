@@ -1020,9 +1020,9 @@
 }
 
 .cta-banner {
-  background: linear-gradient(135deg, #090F24 0%, #0F172A 50%, #172554 100%);
+  background: linear-gradient(90deg, rgba(9, 15, 36, 0.94) 0%, rgba(15, 23, 42, 0.88) 50%, rgba(23, 37, 84, 0.8) 100%), url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
   border-radius: 20px;
-  padding: 36px 48px;
+  padding: 40px 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
