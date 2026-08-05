@@ -77,15 +77,19 @@
         <a href="#why-us" class="nav-menu__link">Why Us</a>
         <a href="#case-studies" class="nav-menu__link">Case Studies</a>
         <a href="#contact" class="nav-menu__link">Contact</a>
-        <div class="nav-cta">
-          <a href="#contact" class="btn btn-primary btn-sm">Get Started <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
       </nav>
 
-      <div class="flex items-center gap-md">
-        <a href="tel:1800524866" class="nav-phone">
-          <i class="fa-solid fa-phone"></i> <span>1800 524 866</span>
+      <div class="nav-actions flex items-center gap-md">
+        <a href="tel:1800524866" class="nav-phone-badge">
+          <div class="nav-phone__icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="nav-phone__num">1800 524 866</div>
+            <div class="nav-phone__sub">AUSTRALIAN SUPPORT 24/7</div>
+          </div>
         </a>
+
+        <a href="#contact" class="btn btn-primary nav-cta-btn">Book Free Consultation</a>
+
         <div class="nav-hamburger" id="navToggle" aria-label="Toggle Menu" role="button">
           <span class="nav-hamburger__line"></span>
           <span class="nav-hamburger__line"></span>
@@ -101,47 +105,87 @@
        ═══════════════════════════════════════════ -->
   <section class="hero" id="hero">
     <div class="hero__bg">
-      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" alt="Executive boardroom presentation overlooking Sydney Harbour skyline" loading="eager">
+      <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop" alt="Executive boardroom presentation overlooking Sydney Harbour skyline" loading="eager">
     </div>
     <div class="hero__overlay"></div>
     <canvas id="heroParticles" class="hero__particles"></canvas>
 
-    <div class="container">
+    <div class="container hero__container">
       <div class="hero__content animate-on-scroll is-visible" data-animate="fade-up">
+        <div class="hero__tag">AUSTRALIA'S TRUSTED DIGITAL PARTNER</div>
+
         <h1 class="hero__title">
-          Enterprise Software for <span>Australian Businesses</span>
+          Smart Digital Solutions<br>For <span class="highlight-blue">Australian</span> Businesses
         </h1>
+
+        <p class="hero__subtitle">
+          We build intelligent websites, powerful apps and data-driven solutions that help businesses grow, scale and lead.
+        </p>
+
+        <!-- 2x2 Feature Checkmarks -->
+        <div class="hero__features-grid">
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Web Development</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>AI & Data Solutions</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Digital Marketing</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Cloud & Cyber Security</span>
+          </div>
+        </div>
 
         <div class="hero__actions">
           <a href="#contact" class="btn btn-primary btn-lg">
-            Book Executive Strategy Session <i class="fa-solid fa-arrow-right"></i>
+            Book Free Consultation <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a href="#services" class="btn btn-outline btn-lg">
-            Explore Capabilities <i class="fa-solid fa-compass"></i>
+          <a href="#services" class="btn btn-outline-white btn-lg">
+            Our Services <i class="fa-solid fa-circle-play"></i>
           </a>
         </div>
+      </div>
 
-        <div class="hero__stats stat-counter-group">
-          <div class="stat">
-            <div class="stat__value" data-target="450" data-suffix="+">0</div>
-            <div class="stat__label">Enterprise Systems Deployed</div>
+      <!-- Hero Bottom Stats Floating Strip -->
+      <div class="hero__stats-strip stat-counter-group animate-on-scroll" data-animate="fade-up">
+        <div class="hero-stat-card">
+          <div class="hero-stat__icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div>
+            <div class="hero-stat__value"><span class="stat__value" data-target="1200" data-suffix="+">0</span></div>
+            <div class="hero-stat__label">Projects Completed</div>
           </div>
-          <div class="stat">
-            <div class="stat__value" data-target="99" data-suffix=".9%">0</div>
-            <div class="stat__label">SLA Uptime Guarantee</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="hero-stat__icon"><i class="fa-solid fa-users"></i></div>
+          <div>
+            <div class="hero-stat__value"><span class="stat__value" data-target="350" data-suffix="+">0</span></div>
+            <div class="hero-stat__label">Australian Clients</div>
           </div>
-          <div class="stat">
-            <div class="stat__value" data-target="15" data-suffix=" Yrs">0</div>
-            <div class="stat__label">Australian Domain Leadership</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="hero-stat__icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <div class="hero-stat__value"><span class="stat__value" data-target="99" data-suffix="%">0</span></div>
+            <div class="hero-stat__label">Client Satisfaction</div>
+          </div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="hero-stat__icon"><i class="fa-solid fa-award"></i></div>
+          <div>
+            <div class="hero-stat__value"><span class="stat__value" data-target="14" data-suffix="+">0</span></div>
+            <div class="hero-stat__label">Years Experience</div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="hero__trust">
-      <div class="hero__trust-item"><i class="fa-solid fa-shield-halved"></i> ISO 27001 Certified</div>
-      <div class="hero__trust-item"><i class="fa-solid fa-lock"></i> SOC 2 Type II Compliant</div>
-      <div class="hero__trust-item"><i class="fa-solid fa-flag"></i> 100% Onshore Governance</div>
     </div>
   </section>
 

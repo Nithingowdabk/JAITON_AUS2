@@ -125,6 +125,12 @@
     visibility: visible;
   }
 
+  /* Hero */
+  .hero__stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+
   /* About */
   .about__grid {
     grid-template-columns: 1fr;
