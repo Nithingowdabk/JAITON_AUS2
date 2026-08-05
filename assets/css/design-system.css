@@ -220,11 +220,11 @@ button {
 }
 
 .section-padding {
-  padding: var(--section-padding);
+  padding: var(--space-2xl) 0;
 }
 
 .section-padding--lg {
-  padding: var(--space-5xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 /* ── Text Utilities ── */
