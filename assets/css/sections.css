@@ -818,27 +818,89 @@
 
 
 /* ═══════════════════════════════════════════
-   SECTION 6 — DELIVERY PROCESS
+   SECTION 6 — OUR PROCESS
    ═══════════════════════════════════════════ */
-.delivery {
+.process {
   background: var(--color-bg);
   position: relative;
 }
 
-.delivery__layout {
+.process__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.process__flow {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-3xl);
-  align-items: start;
-}
-
-.delivery__left {
-  position: sticky;
-  top: calc(var(--nav-height) + var(--space-2xl));
-}
-
-.delivery__timeline {
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-md);
   position: relative;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+}
+
+.process-step__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+  transition: all var(--transition-fast);
+}
+
+.process-step:hover .process-step__icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Connecting line between icons */
+.process-step:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 44px;
+  right: -12px;
+  height: 1px;
+  border-top: 2px dashed #CBD5E1;
+  z-index: 1;
+}
+
+.process-step__number {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.process-step__title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.process-step__desc {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1.45;
+  margin-bottom: 0;
 }
 
 

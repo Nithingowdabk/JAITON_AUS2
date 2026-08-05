@@ -150,14 +150,14 @@
     grid-template-columns: 1fr;
   }
 
-  /* Delivery */
-  .delivery__layout {
-    grid-template-columns: 1fr;
-    gap: var(--space-2xl);
+  /* Process */
+  .process__flow {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
   }
 
-  .delivery__left {
-    position: static;
+  .process-step::before {
+    display: none;
   }
 
   /* Case studies */
