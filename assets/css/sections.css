@@ -453,25 +453,38 @@
    SECTION 3 — SERVICES
    ═══════════════════════════════════════════ */
 .services {
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
   position: relative;
 }
 
-.services__header {
-  text-align: center;
-  margin-bottom: var(--space-3xl);
+.services__header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-2xl);
+  flex-wrap: wrap;
+  gap: var(--space-md);
 }
 
-.services__header .section-title,
-.services__header .section-subtitle {
-  margin-left: auto;
-  margin-right: auto;
+.services__view-all {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-body-sm);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: gap var(--transition-fast);
+}
+
+.services__view-all:hover {
+  gap: 10px;
 }
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-md);
 }
 
 

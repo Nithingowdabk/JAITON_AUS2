@@ -141,7 +141,7 @@
 
   /* Services */
   .services__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* Why Us */
@@ -236,8 +236,8 @@
 
   /* Services */
   .services__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
   }
 
   /* Testimonials */
