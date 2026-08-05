@@ -447,57 +447,64 @@
 
 /* ── Testimonial Card ── */
 .card--testimonial {
-  padding: var(--space-2xl) var(--space-xl);
-  border-radius: var(--radius-2xl);
-  width: 380px;
-  max-width: 100%;
-  flex-shrink: 0;
-  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  padding: 24px 22px !important;
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
   border: 1px solid var(--color-border-light);
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .card--testimonial:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-  border-color: rgba(108,59,255,0.15);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.1);
+  border-color: rgba(37, 99, 235, 0.2);
 }
 
 .card--testimonial .card__stars {
   display: flex;
-  gap: 4px;
-  margin-bottom: var(--space-lg);
-  color: #F59E0B;
-  font-size: 1.125rem;
+  gap: 3px;
+  margin-bottom: 14px;
+  color: #FFB800;
+  font-size: 0.95rem;
 }
 
 .card--testimonial .card__quote {
-  font-size: var(--fs-body);
-  font-style: italic;
+  font-size: 0.8125rem;
+  font-style: normal;
   color: var(--color-text-secondary);
-  line-height: var(--lh-relaxed);
-  margin-bottom: var(--space-xl);
-  position: relative;
+  line-height: 1.55;
+  margin-bottom: 20px;
 }
 
 .card--testimonial .card__author {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  gap: 12px;
 }
 
 .card--testimonial .card__avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-full);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--color-border-light);
+  flex-shrink: 0;
 }
 
 .card--testimonial .card__author-name {
-  font-weight: var(--fw-semibold);
-  font-size: var(--fs-body);
+  font-weight: 700;
+  font-size: 0.8125rem;
   color: var(--color-text);
+}
+
+.card--testimonial .card__author-role {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  margin-top: 1px;
 }
 
 .card--testimonial .card__author-role {
