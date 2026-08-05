@@ -8,6 +8,14 @@
 
 /* ── Design Tokens ── */
 :root {
+  /* Bootstrap 5.3 Overrides */
+  --bs-primary:           #6C3BFF;
+  --bs-primary-rgb:       108, 59, 255;
+  --bs-link-color:        #6C3BFF;
+  --bs-link-hover-color:  #5521D9;
+  --bs-body-font-family:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --bs-heading-font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
   /* Colors — Primary Palette */
   --color-primary:        #6C3BFF;
   --color-primary-light:  #8B5CF6;
