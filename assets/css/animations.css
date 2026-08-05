@@ -1,0 +1,292 @@
+/* ============================================================
+   JAITON TECHNOLOGIES — ANIMATION SYSTEM
+   Keyframes, scroll-triggered classes, parallax helpers
+   ============================================================ */
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33%      { transform: translateY(-8px) rotate(1deg); }
+  66%      { transform: translateY(-4px) rotate(-1deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%      { opacity: 1; transform: scale(1.08); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes gradientBorder {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeReverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes counterUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dashDraw {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.3; }
+}
+
+@keyframes progressLine {
+  from { height: 0; }
+  to   { height: 100%; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(108,59,255,0.15); }
+  50%      { box-shadow: 0 0 40px rgba(108,59,255,0.3); }
+}
+
+@keyframes revealText {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes bgSlide {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* ── Scroll-Triggered Animation Classes ── */
+/* Elements start hidden, JS adds .is-visible when in viewport */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+}
+
+/* Directional variants */
+.animate-on-scroll[data-animate="fade-up"] {
+  transform: translateY(32px);
+}
+.animate-on-scroll[data-animate="fade-up"].is-visible {
+  transform: translateY(0);
+}
+
+.animate-on-scroll[data-animate="fade-down"] {
+  transform: translateY(-32px);
+}
+.animate-on-scroll[data-animate="fade-down"].is-visible {
+  transform: translateY(0);
+}
+
+.animate-on-scroll[data-animate="fade-left"] {
+  transform: translateX(-40px);
+}
+.animate-on-scroll[data-animate="fade-left"].is-visible {
+  transform: translateX(0);
+}
+
+.animate-on-scroll[data-animate="fade-right"] {
+  transform: translateX(40px);
+}
+.animate-on-scroll[data-animate="fade-right"].is-visible {
+  transform: translateX(0);
+}
+
+.animate-on-scroll[data-animate="scale-in"] {
+  transform: scale(0.9);
+}
+.animate-on-scroll[data-animate="scale-in"].is-visible {
+  transform: scale(1);
+}
+
+.animate-on-scroll[data-animate="fade"] {
+  /* Just opacity, no transform */
+}
+
+/* ── Stagger Delays ── */
+.animate-on-scroll[data-delay="100"]  { transition-delay: 0.1s; }
+.animate-on-scroll[data-delay="200"]  { transition-delay: 0.2s; }
+.animate-on-scroll[data-delay="300"]  { transition-delay: 0.3s; }
+.animate-on-scroll[data-delay="400"]  { transition-delay: 0.4s; }
+.animate-on-scroll[data-delay="500"]  { transition-delay: 0.5s; }
+.animate-on-scroll[data-delay="600"]  { transition-delay: 0.6s; }
+.animate-on-scroll[data-delay="700"]  { transition-delay: 0.7s; }
+.animate-on-scroll[data-delay="800"]  { transition-delay: 0.8s; }
+
+/* ── Floating Elements (decorative) ── */
+.floating-element {
+  position: absolute;
+  pointer-events: none;
+  animation: floatSlow 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+.floating-element--1 { animation-delay: 0s; animation-duration: 7s; }
+.floating-element--2 { animation-delay: -2s; animation-duration: 8s; }
+.floating-element--3 { animation-delay: -4s; animation-duration: 6s; }
+
+.floating-blob {
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.08;
+}
+
+.floating-blob--primary {
+  background: var(--color-primary);
+}
+
+.floating-blob--secondary {
+  background: var(--color-secondary);
+}
+
+.floating-blob--accent {
+  background: var(--color-accent);
+}
+
+/* ── Parallax Helper ── */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  inset: -20% 0;
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  z-index: -1;
+  will-change: transform;
+}
+
+/* ── Counter Animation ── */
+.counter-value {
+  display: inline-block;
+  min-width: 2ch;
+}
+
+.counter-value.is-counting {
+  animation: counterUp 0.3s var(--ease-out) forwards;
+}
+
+/* ── Image Zoom on Hover ── */
+.img-zoom-wrap {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.img-zoom-wrap img {
+  transition: transform var(--transition-slow);
+}
+
+.img-zoom-wrap:hover img {
+  transform: scale(1.06);
+}
+
+/* ── Timeline Progress ── */
+.timeline-progress-track {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+  z-index: 1;
+}
+
+.timeline-progress-fill {
+  width: 100%;
+  background: var(--gradient-primary);
+  transition: height 0.3s var(--ease-out);
+}
+
+/* ── Gradient Border Animation ── */
+.animated-gradient-border {
+  background-size: 200% 200%;
+  animation: gradientBorder 4s ease infinite;
+}
+
+/* ── Magnetic Button Hover ── */
+.magnetic-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+/* ── Loading / Skeleton ── */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-bg-alt) 25%, var(--color-border-light) 50%, var(--color-bg-alt) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease infinite;
+  border-radius: var(--radius-md);
+}
+
+/* ── Globe Section Particles ── */
+.globe-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0.4;
+  animation: float 4s ease-in-out infinite;
+}
