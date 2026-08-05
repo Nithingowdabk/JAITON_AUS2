@@ -215,12 +215,12 @@
 }
 
 .hero__title {
-  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-size: clamp(1.875rem, 3.5vw, 2.625rem);
   font-weight: 800;
   color: var(--color-white);
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
   letter-spacing: -0.02em;
-  line-height: 1.15;
+  line-height: 1.18;
 }
 
 .hero__title .highlight-blue {
@@ -230,39 +230,39 @@
 }
 
 .hero__subtitle {
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   color: rgba(255,255,255,0.75);
-  line-height: 1.6;
-  margin-bottom: 1.75rem;
-  max-width: 600px;
+  line-height: 1.55;
+  margin-bottom: 1.35rem;
+  max-width: 540px;
 }
 
 /* 2x2 Features Grid */
 .hero__features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px 24px;
-  margin-bottom: 2rem;
-  max-width: 520px;
+  gap: 10px 20px;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
 }
 
 .hero-feature-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.9375rem;
+  gap: 8px;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--color-white);
 }
 
 .hero-feature-item i {
   color: #3B82F6;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .hero__actions {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -270,25 +270,25 @@
 .hero__stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
-  padding: 24px 36px;
+  gap: var(--space-md);
+  padding: 16px 28px;
   background: rgba(9, 15, 36, 0.94);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-  margin-top: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+  margin-top: 1.5rem;
 }
 
 .hero-stat-card {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .hero-stat__icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: rgba(37, 99, 235, 0.15);
   border: 1px solid rgba(37, 99, 235, 0.3);
@@ -296,23 +296,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   flex-shrink: 0;
 }
 
 .hero-stat__value {
   font-family: var(--font-heading);
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--color-white);
   line-height: 1.1;
 }
 
 .hero-stat__label {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: rgba(255,255,255,0.65);
   font-weight: 500;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 
