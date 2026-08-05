@@ -489,40 +489,72 @@
 
 
 /* ═══════════════════════════════════════════
-   SECTION 4 — INDUSTRIES
+   SECTION 4 — INDUSTRIES WE SERVE
    ═══════════════════════════════════════════ */
 .industries {
   background: var(--color-bg);
   position: relative;
 }
 
-.industries__header {
-  margin-bottom: var(--space-2xl);
+.industries__strip {
+  background: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  padding: 24px 12px;
 }
 
-.industries__scroll {
+.industry-item {
   display: flex;
-  gap: var(--space-lg);
-  overflow-x: auto;
-  padding-bottom: var(--space-lg);
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  cursor: grab;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 6px;
+  position: relative;
+  transition: transform var(--transition-fast);
 }
 
-.industries__scroll.is-dragging {
-  cursor: grabbing;
-  scroll-snap-type: none;
-  user-select: none;
+.industry-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  bottom: 15%;
+  width: 1px;
+  background: var(--color-border-light);
 }
 
-.industries__scroll.is-dragging .card--industry {
-  pointer-events: none;
+.industry-item:hover {
+  transform: translateY(-3px);
 }
 
-.industries__scroll::-webkit-scrollbar {
-  display: none;
+.industry-item__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  transition: all var(--transition-fast);
+}
+
+.industry-item:hover .industry-item__icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.industry-item__name {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  white-space: nowrap;
 }
 
 .industries__scroll .card--industry {

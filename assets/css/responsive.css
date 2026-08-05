@@ -249,9 +249,12 @@
   }
 
   /* Industries */
-  .card--industry {
-    min-width: 220px;
-    height: 280px;
+  .industries__strip {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .industry-item::after {
+    display: none;
   }
 
   /* Why Us */
