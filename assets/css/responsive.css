@@ -139,8 +139,9 @@
     aspect-ratio: 16/10;
   }
 
-  /* Services */
-  .services__grid {
+  /* Services & Portfolio */
+  .services__grid,
+  .portfolio__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -234,8 +235,9 @@
     border-radius: var(--radius-xl);
   }
 
-  /* Services */
-  .services__grid {
+  /* Services & Portfolio */
+  .services__grid,
+  .portfolio__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
   }

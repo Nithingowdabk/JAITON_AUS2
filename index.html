@@ -496,81 +496,95 @@
   <!-- ═══════════════════════════════════════════
        SECTION 7 — CASE STUDIES
        ═══════════════════════════════════════════ -->
-  <section class="case-studies section-padding--lg" id="case-studies">
+  <!-- ═══════════════════════════════════════════
+       SECTION 7 — PORTFOLIO
+       ═══════════════════════════════════════════ -->
+  <section class="portfolio section-padding--lg" id="case-studies">
     <div class="container">
-      <div class="case-studies__header animate-on-scroll" data-animate="fade-up">
-        <div class="section-label">Proven Results</div>
-        <h2 class="section-title">Selected Enterprise Case Studies</h2>
-        <p class="section-subtitle">Real digital transformation outcomes for leading corporations across Sydney, Melbourne, and APAC.</p>
+      <div class="portfolio__header-flex animate-on-scroll" data-animate="fade-up">
+        <div>
+          <div class="section-label">OUR PORTFOLIO</div>
+          <h2 class="section-title" style="margin-bottom:0;">Recent Projects, Real Results</h2>
+        </div>
+        <a href="#contact" class="portfolio__view-all">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div class="case-studies__list">
-        <!-- Case Study 1 -->
-        <div class="card card--case-study animate-on-scroll" data-animate="fade-up">
-          <div class="card__image-col">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Cloud Modernization Case Study">
+      <div class="portfolio__grid">
+        <!-- Card 1: Yashoda Hospital -->
+        <div class="card card--portfolio animate-on-scroll" data-animate="fade-up" data-delay="100">
+          <div class="portfolio-card__image-wrap">
+            <span class="portfolio-card__tag">Healthcare Website</span>
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop" alt="Yashoda Hospital Project">
           </div>
-          <div class="card__text-col">
-            <span class="card__category">National Logistics Leader • Sydney</span>
-            <h3 class="card__title">Real-Time Cloud Telemetry & Automated Logistics Platform</h3>
-            <p class="card__desc">Modernized legacy mainframe logistics tracking into an event-driven Kafka and AWS Kubernetes architecture servicing over 1.2M daily package events across Australia.</p>
-            <div class="card__metrics">
-              <div>
-                <div class="card__metric-value">64%</div>
-                <div class="card__metric-label">OpEx Reduction</div>
-              </div>
-              <div>
-                <div class="card__metric-value">99.99%</div>
-                <div class="card__metric-label">System Availability</div>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-secondary btn-sm" style="width: fit-content;">Read Full Case Study <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">Yashoda Hospital</h3>
+            <p class="portfolio-card__location">Sydney, NSW</p>
+            <a href="#contact" class="portfolio-card__link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <!-- Case Study 2 -->
-        <div class="card card--case-study card--reversed animate-on-scroll" data-animate="fade-up">
-          <div class="card__image-col">
-            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop" alt="Healthcare AI Platform Case Study">
+        <!-- Card 2: Kakinex Tech -->
+        <div class="card card--portfolio animate-on-scroll" data-animate="fade-up" data-delay="200">
+          <div class="portfolio-card__image-wrap">
+            <span class="portfolio-card__tag">Web Application</span>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Kakinex Tech Project">
           </div>
-          <div class="card__text-col">
-            <span class="card__category">Private Health Network • Melbourne</span>
-            <h3 class="card__title">AI-Powered Diagnostic Workflow & Clinical Analytics</h3>
-            <p class="card__desc">Designed a HIPAA/Privacy Act compliant machine learning diagnostic routing portal that processes medical imaging data across 32 regional hospital facilities in under 2 seconds.</p>
-            <div class="card__metrics">
-              <div>
-                <div class="card__metric-value">3.5x</div>
-                <div class="card__metric-label">Faster Triage Speed</div>
-              </div>
-              <div>
-                <div class="card__metric-value">100%</div>
-                <div class="card__metric-label">Data Sovereignty</div>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-secondary btn-sm" style="width: fit-content;">Read Full Case Study <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">Kakinex Tech</h3>
+            <p class="portfolio-card__location">Melbourne, VIC</p>
+            <a href="#contact" class="portfolio-card__link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <!-- Case Study 3 -->
-        <div class="card card--case-study animate-on-scroll" data-animate="fade-up">
-          <div class="card__image-col">
-            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1000&auto=format&fit=crop" alt="Banking Core Platform Case Study">
+        <!-- Card 3: EduSmart LMS -->
+        <div class="card card--portfolio animate-on-scroll" data-animate="fade-up" data-delay="300">
+          <div class="portfolio-card__image-wrap">
+            <span class="portfolio-card__tag">LMS Platform</span>
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop" alt="EduSmart LMS Project">
           </div>
-          <div class="card__text-col">
-            <span class="card__category">Tier-1 Banking Institution • Sydney</span>
-            <h3 class="card__title">APRA CPS 234 Compliant Core Banking Modernization</h3>
-            <p class="card__desc">Architected high-frequency microservices API gateways and zero-trust cloud data lakes servicing over 4.5 million consumer banking transactions daily across Australia.</p>
-            <div class="card__metrics">
-              <div>
-                <div class="card__metric-value">4.5M+</div>
-                <div class="card__metric-label">Daily API Requests</div>
-              </div>
-              <div>
-                <div class="card__metric-value">0 sec</div>
-                <div class="card__metric-label">Deployment Downtime</div>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-secondary btn-sm" style="width: fit-content;">Read Full Case Study <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">EduSmart LMS</h3>
+            <p class="portfolio-card__location">Brisbane, QLD</p>
+            <a href="#contact" class="portfolio-card__link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 4: TravelGo -->
+        <div class="card card--portfolio animate-on-scroll" data-animate="fade-up" data-delay="400">
+          <div class="portfolio-card__image-wrap">
+            <span class="portfolio-card__tag">Travel & Booking</span>
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=600&auto=format&fit=crop" alt="TravelGo Project">
+          </div>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">TravelGo</h3>
+            <p class="portfolio-card__location">Perth, WA</p>
+            <a href="#contact" class="portfolio-card__link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 5: FinEdge Analytics -->
+        <div class="card card--portfolio animate-on-scroll" data-animate="fade-up" data-delay="500">
+          <div class="portfolio-card__image-wrap">
+            <span class="portfolio-card__tag">Finance Dashboard</span>
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=600&auto=format&fit=crop" alt="FinEdge Analytics Project">
+          </div>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">FinEdge Analytics</h3>
+            <p class="portfolio-card__location">Sydney, NSW</p>
+            <a href="#contact" class="portfolio-card__link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 6: BuildPro Constructions -->
+        <div class="card card--portfolio animate-on-scroll" data-animate="fade-up" data-delay="600">
+          <div class="portfolio-card__image-wrap">
+            <span class="portfolio-card__tag">Corporate Website</span>
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop" alt="BuildPro Constructions Project">
+          </div>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">BuildPro Constructions</h3>
+            <p class="portfolio-card__location">Adelaide, SA</p>
+            <a href="#contact" class="portfolio-card__link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>

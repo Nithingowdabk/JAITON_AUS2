@@ -842,21 +842,39 @@
 }
 
 
-.case-studies {
-  background: var(--color-bg-alt);
+.portfolio {
+  background: var(--color-bg);
   position: relative;
-  padding-bottom: var(--space-5xl);
 }
 
-.case-studies__header {
-  text-align: center;
-  margin-bottom: var(--space-4xl);
+.portfolio__header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-2xl);
+  flex-wrap: wrap;
+  gap: var(--space-md);
 }
 
-.case-studies__header .section-title,
-.case-studies__header .section-subtitle {
-  margin-left: auto;
-  margin-right: auto;
+.portfolio__view-all {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-body-sm);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: gap var(--transition-fast);
+}
+
+.portfolio__view-all:hover {
+  gap: 10px;
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-md);
 }
 
 .case-studies__list {
