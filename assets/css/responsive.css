@@ -289,6 +289,15 @@
     min-width: 300px;
   }
 
+  /* Contact */
+  .contact__grid-3col {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  .contact__map-wrap {
+    min-height: 380px;
+  }
+
   /* Form */
   .form-row {
     grid-template-columns: 1fr;

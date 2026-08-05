@@ -874,89 +874,108 @@
 
 
   <!-- ═══════════════════════════════════════════
-       SECTION 13 — CONTACT
+       SECTION 13 — GET IN TOUCH / CONTACT
        ═══════════════════════════════════════════ -->
-  <section class="contact section-padding--lg" id="contact">
+  <section class="contact section-padding" id="contact">
     <div class="container">
-      <div class="contact__grid">
-        <div class="animate-on-scroll" data-animate="fade-right">
-          <div class="section-label">Connect With Us</div>
-          <h2 class="section-title">Sydney Headquarters & Client Executive Office</h2>
-          <p class="about__desc">We invite chief information officers, CTOs, and digital leaders to meet our team in Barangaroo or request a proposal online.</p>
+      <div class="contact__grid-3col">
+        <!-- Col 1: Left Header & Info -->
+        <div class="contact__left animate-on-scroll" data-animate="fade-right">
+          <div class="section-label">GET IN TOUCH</div>
+          <h2 class="section-title">Let's Discuss Your Next Project</h2>
+          <p class="contact__desc">Have a project in mind? Get in touch with our team today and let's create something great together.</p>
 
-          <div class="contact__image-col">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Sydney Office Headquarters Barangaroo" class="contact__image">
-          </div>
-
-          <div class="contact__info">
-            <div class="contact__info-item">
-              <div class="contact__info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact__info-list">
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa-solid fa-phone"></i></div>
               <div>
-                <div class="contact__info-label">Head Office Address</div>
-                <p class="contact__info-value">Level 35, International Towers, 100 Barangaroo Ave, Sydney NSW 2000</p>
+                <div class="contact-item__val">1800 524 866</div>
+                <div class="contact-item__sub">Mon - Fri 9:00 AM - 5:30 PM AEST</div>
               </div>
             </div>
 
-            <div class="contact__info-item">
-              <div class="contact__info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa-solid fa-envelope"></i></div>
               <div>
-                <div class="contact__info-label">Direct Toll-Free Line</div>
-                <p class="contact__info-value">1800 524 866 (AU) / +61 2 8990 4100</p>
+                <div class="contact-item__val">hello@jaiton.com.au</div>
+                <div class="contact-item__sub">We reply within 24 hours</div>
               </div>
             </div>
 
-            <div class="contact__info-item">
-              <div class="contact__info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></div>
               <div>
-                <div class="contact__info-label">Executive Inquiries</div>
-                <p class="contact__info-value">enterprise@jaiton.com.au</p>
+                <div class="contact-item__val">Sydney, NSW, Australia</div>
+                <div class="contact-item__sub">Level 10, 31 Market Street, Sydney NSW 2000</div>
               </div>
             </div>
-          </div>
-
-          <div class="contact__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.9263157774917!2d151.20037807671173!3d-33.86576881878952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae4045f4df21%3A0xf017d68f9f1e1c0!2sInternational%20Towers%20Sydney!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map Barangaroo Office"></iframe>
           </div>
         </div>
 
-        <div class="contact__form-col animate-on-scroll" data-animate="fade-left">
-          <h3 class="contact__form-title">Request an Enterprise Proposal</h3>
-          <p class="contact__form-subtitle">Fill in your information below. A Managing Director will reach out within 2 business hours.</p>
-
-          <form id="contactForm">
+        <!-- Col 2: Middle Contact Form -->
+        <div class="contact__form-wrap animate-on-scroll" data-animate="fade-up">
+          <form id="contactForm" class="contact-form">
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="firstName">First Name *</label>
-                <input type="text" id="firstName" class="form-input" placeholder="e.g. Lachlan" required>
+                <label class="form-label" for="fullName">Full Name</label>
+                <input type="text" id="fullName" class="form-input" placeholder="Your full name" required>
               </div>
               <div class="form-group">
-                <label class="form-label" for="lastName">Last Name *</label>
-                <input type="text" id="lastName" class="form-input" placeholder="e.g. Murdoch" required>
+                <label class="form-label" for="emailAddr">Email Address</label>
+                <input type="email" id="emailAddr" class="form-input" placeholder="Your email address" required>
               </div>
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="workEmail">Work Email *</label>
-                <input type="email" id="workEmail" class="form-input" placeholder="name@company.com.au" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="phone">Phone Number *</label>
-                <input type="tel" id="phone" class="form-input" placeholder="+61 400 000 000" required>
-              </div>
-            </div>
-
-
 
             <div class="form-group">
-              <label class="form-label" for="message">Project Scope & Objectives *</label>
-              <textarea id="message" class="form-textarea" placeholder="Briefly describe your high-level business objectives, timeline, or key technical challenges..." required></textarea>
+              <label class="form-label" for="phoneNum">Phone Number</label>
+              <input type="tel" id="phoneNum" class="form-input" placeholder="Your phone number">
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
-              Submit RFP Request <i class="fa-solid fa-paper-plane"></i>
+            <div class="form-group">
+              <label class="form-label" for="message">How can we help?</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us about your project..." rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message <i class="fa-solid fa-arrow-right"></i>
             </button>
           </form>
+        </div>
+
+        <!-- Col 3: Right Map & Office Locations Overlay -->
+        <div class="contact__map-wrap animate-on-scroll" data-animate="fade-left">
+          <div class="map-bg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.9263157774917!2d151.20037807671173!3d-33.86576881878952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae4045f4df21%3A0xf017d68f9f1e1c0!2sInternational%20Towers%20Sydney!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Office Location Map"></iframe>
+          </div>
+
+          <div class="office-overlay-card">
+            <!-- Sydney Office -->
+            <div class="office-item">
+              <div class="office-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4 class="office-item__title">Sydney (HQ)</h4>
+                <p class="office-item__desc">Executive & Strategy<br>Level 10, 31 Market Street, Sydney NSW 2000</p>
+              </div>
+            </div>
+
+            <!-- Johannesburg Office -->
+            <div class="office-item">
+              <div class="office-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4 class="office-item__title">Johannesburg</h4>
+                <p class="office-item__desc">EMEA Regional Hub<br>Rosebank Executive Center, Johannesburg 2196</p>
+              </div>
+            </div>
+
+            <!-- Bangalore Office -->
+            <div class="office-item">
+              <div class="office-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4 class="office-item__title">Bangalore</h4>
+                <p class="office-item__desc">Deep Tech COE<br>Outer Ring Road Tech Park, Bangalore 560103</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
